@@ -26,6 +26,7 @@ export class SearchComponent {
       if (value) {
         this.httpService.getSearchMovies(value).subscribe((result: any) => {
           this.MovieList = this.MovieList = result
+          console.log(result)
         })
       }
       else {

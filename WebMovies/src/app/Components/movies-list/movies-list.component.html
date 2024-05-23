@@ -1,5 +1,5 @@
 @for (movie of movieList ; track movie) {
 <div class="bg-white w-full h-16 px-4 py-2 rounded shadow flex justify-between items-center mt-2 mb-2 pr-8">
-    {{movie.title}} - ({{movie.year}})
+    {{movie.title}} - ({{movie.year}}) {{movie.popular ? "is Popular" : ""}} {{movie.watchers > 0 ? "is Trending" : ""}}
 </div>
 }

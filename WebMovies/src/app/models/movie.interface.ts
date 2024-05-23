@@ -9,6 +9,6 @@ export interface Movie {
         imdb: string;
         tmdb: number;
     };
-    watchers?: number | null;
+    watchers: number;
     popular: boolean;
 }
